@@ -1,13 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+    /* Font families */
+    --fs-big: 1.5rem;
+    --fs-medium:1.125rem;
+    --fs-small: 1rem;
+    
+    /* Colors */
+    --primary-color: #2A0646;
+}
+
+h1, h2 {
+    font-family: Dosis;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-weight: 800;
+    font-size: var(--fs-big);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: var(--fs-medium);
+}
+
+h3 {
+    font-weight: 500;
+    font-size: var(--fs-small);
+    color: var(--primary-color);
+}
+
+p {
+    font-family: 'Red Hat Display';
 }

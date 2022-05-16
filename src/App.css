@@ -1,0 +1,36 @@
+.landing-page-container {
+    padding: 28px 24px;
+}
+.search-box-container {
+    --button-width: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 16px 0px 30px 0px; 
+}
+
+.search-box {
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #EEEAF2;
+    padding: 0 calc(var(--button-width) + 16px) 0 16px;
+    font-family: 'Red Hat Display';
+    font-size: var(--ff-big);
+}
+
+.search-box:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+.search-box-button {
+    position: absolute;
+    width: var(--button-width);
+    height: 100%;
+    right: 0;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    background-color: var(--primary-color);
+    font-size: 20px;
+}
