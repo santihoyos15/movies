@@ -46,6 +46,7 @@ h3 {
     font-weight: 500;
     font-size: var(--fs-small);
     color: var(--primary-color);
+    font-family: 'Red Hat Display';
 }
 
 p {

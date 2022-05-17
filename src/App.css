@@ -34,3 +34,43 @@
     background-color: var(--primary-color);
     font-size: 20px;
 }
+
+.movie-gallery{
+    margin: 24px 0 24px 0;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.movie {
+    display: inline-block;
+    width: 150px;
+    height: 225px;
+    margin: 0 16px;
+    border-radius: 8px;
+    background-color: brown;
+}
+
+.movie:first-child, .movie:last-child {
+    margin: 0;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 8px;
+    margin: 24px 0 0 0;
+}
+
+.categories li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.categories li div{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+}
