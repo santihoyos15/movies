@@ -45,13 +45,16 @@
     display: inline-block;
     width: 150px;
     height: 225px;
-    margin: 0 16px;
+    margin: 0 8px;
     border-radius: 8px;
     background-color: brown;
 }
 
-.movie:first-child, .movie:last-child {
-    margin: 0;
+.movie:first-child {
+    margin-left: 0px;
+}
+.movie:last-child {
+    margin-right: 0;
 }
 
 .categories {
