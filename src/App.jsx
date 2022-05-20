@@ -1,28 +1,25 @@
 import React from 'react'
 import './App.css';
 import SearchBox from './components/SearchBox'
-import Movie from './components/Movie'
+import MovieGallery from './components/MovieGallery'
 import CategoryList from './components/CategoryList'
-import {API_KEY} from './secrets.js'
+import MovieDetail from './components/MovieDetail'
+// import {API_KEY} from './secrets.js'
 
 export default function App() {
     const [search, setSearch] = React.useState('')
     const [movieClicked, setMovieClicked] = React.useState(false)
-
-    const moviesElements = [
-        <Movie handleClick={toggleMovie}></Movie>,
-        <Movie handleClick={toggleMovie}></Movie>,
-        <Movie handleClick={toggleMovie}></Movie>,
-        <Movie handleClick={toggleMovie}></Movie>,
-        <Movie handleClick={toggleMovie}></Movie>
-    ]
 
     function toggleMovie() {
         setMovieClicked(prevMovieClicked => !prevMovieClicked)
     }
 
     function handleChange (evt) {
-        setSearch(evt.target.value);
+        setSearch(evt.target.value)
+    }
+    
+    function goBackFromMovieDetail () {
+        toggleMovie()
     }
 
 	return (
@@ -35,14 +32,12 @@ export default function App() {
                         <h2>Trends</h2>
                         <h3>See more</h3>
                     </div>
-                    <div className="movie-gallery">
-                        {moviesElements}
-                    </div>
+                    <MovieGallery toggleMovie={toggleMovie}/>
                     <h2>Categories</h2>
                     <CategoryList />
                 </main>
                 : 
-                <p>Test</p>
+                <MovieDetail handleClick={goBackFromMovieDetail}/>
             }
         </div>
     )

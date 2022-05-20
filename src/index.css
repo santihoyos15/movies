@@ -25,6 +25,9 @@ code {
     
     /* Colors */
     --primary-color: #2A0646;
+
+    /* Sizes */
+    --app-horizontal-padding: 28px;
 }
 
 h1, h2 {

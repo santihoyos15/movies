@@ -1,5 +1,5 @@
 .landing-page-container {
-    padding: 28px 24px;
+    padding: var(--app-horizontal-padding) 24px;
 }
 .search-box-container {
     --button-width: 50px;
@@ -76,4 +76,33 @@
     width: 30px;
     height: 30px;
     border-radius: 8px;
+}
+
+.movie-detail-image {
+    background-color: brown;
+    height: 70vh;
+    position: relative;
+}
+
+.go-back-button {
+    --size: 50px;
+    position: sticky;
+    left: calc(var(--app-horizontal-padding) - 10px);
+    top: 40px;
+    height: var(--size);
+    width: var(--size);
+    font-size: var(--size);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.movie-detail {
+    position: relative;
+    top: -20px;
+    padding: var(--app-horizontal-padding);
+    background-color: white;
+    border-radius: 16px 16px 0 0;
 }
