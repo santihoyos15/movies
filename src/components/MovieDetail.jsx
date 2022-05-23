@@ -3,6 +3,7 @@ import CategoryList from './CategoryList'
 import MovieGallery from './MovieGallery'
 
 export default function MovieDetail (props) {
+    console.log(props.movie)
     return (
         <>
             <div className='movie-detail-image'>
@@ -12,8 +13,6 @@ export default function MovieDetail (props) {
                 <h1>Some Movie</h1>
                 <p>A little comment about this movie</p>
                 <CategoryList />
-                <h2>Some category</h2>
-                <MovieGallery />
             </div>
         </>
     )
