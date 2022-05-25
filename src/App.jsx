@@ -18,8 +18,8 @@ export default function App() {
     }, [])
 
     React.useEffect(() => {
-        getMovie(currentMovieId)
-    }, [])
+        currentMovieId && getMovie(currentMovieId)
+    }, [currentMovieId])
 
     async function getTrends () {
         const res = await fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${API_KEY}`)
